@@ -11,7 +11,7 @@ export const uploadDocumentRoute: FastifyPluginAsyncZod = async (
     '/uploads',
     {
       schema: {
-        summary: 'Upload an document',
+        summary: 'Upload a document',
         consumes: ['multipart/form-data'],
         tags: ['Uploads'],
         response: {

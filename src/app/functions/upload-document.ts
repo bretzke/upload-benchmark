@@ -13,5 +13,5 @@ type UploadDocumentInput = z.input<typeof uploadDocumentInput>
 export async function uploadDocument(
   input: UploadDocumentInput
 ): Promise<Either<Error, { url: string }>> {
-  return makeRight({ url: `http://test.com/${JSON.stringify(input)}` })
+  return makeRight({ url: `http://test.com/${input.fileName}` })
 }

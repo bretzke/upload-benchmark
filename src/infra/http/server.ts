@@ -1,3 +1,6 @@
+import { initializeTracing } from '../logs/tracing'
+await initializeTracing()
+
 import { fastifyCors } from '@fastify/cors'
 import fastifyMultipart from '@fastify/multipart'
 import fastifySwagger from '@fastify/swagger'
