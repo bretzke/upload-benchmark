@@ -1,0 +1,1 @@
+CREATE DATABASE upload_benchmark_test
